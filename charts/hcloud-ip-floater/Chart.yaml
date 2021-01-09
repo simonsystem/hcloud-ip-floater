@@ -1,0 +1,6 @@
+apiVersion: v2
+name: hcloud-ip-floater
+description: k8s controller for Hetzner Cloud floating IPs
+type: application
+version: 0.1.0
+appVersion: v0.1.4

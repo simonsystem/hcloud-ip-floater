@@ -15,7 +15,7 @@
 *.out
 
 # output of go build
-hcloud-ip-floater
+/hcloud-ip-floater
 
 # tempfiles
 *~
