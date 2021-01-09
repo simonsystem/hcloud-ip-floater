@@ -37,7 +37,9 @@ spec:
                 secretKeyRef:
                   name: {{ include "hcloud-ip-floater.secretName" . }}
                   key: {{ .Values.secret.key }}
+            {{- if .Values.extraEnv }}
             {{- toYaml .Values.extraEnv | nindent 12 }}
+            {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
